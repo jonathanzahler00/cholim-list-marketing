@@ -228,28 +228,28 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Our Impact
+            Our Vision
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="text-5xl font-bold text-primary-600 mb-2">50+</div>
-              <div className="text-gray-600">Communities</div>
+              <div className="text-5xl font-bold text-primary-600 mb-2">∞</div>
+              <div className="text-gray-600">Unlimited Names</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-primary-600 mb-2">10K+</div>
-              <div className="text-gray-600">Names Managed</div>
+              <div className="text-5xl font-bold text-primary-600 mb-2">Real-time</div>
+              <div className="text-gray-600 text-sm">Duplicate Detection</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-primary-600 mb-2">500+</div>
-              <div className="text-gray-600">Hours Saved</div>
+              <div className="text-5xl font-bold text-primary-600 mb-2">Auto</div>
+              <div className="text-gray-600">Weekly Rollover</div>
             </div>
             <div>
-              <div className="text-5xl font-bold text-primary-600 mb-2">100%</div>
-              <div className="text-gray-600">Duplicate Prevention</div>
+              <div className="text-5xl font-bold text-primary-600 mb-2">24/7</div>
+              <div className="text-gray-600">Always Available</div>
             </div>
           </div>
           <p className="text-xl text-gray-600 mb-8">
-            Every week, we help communities focus less on logistics and more on what matters: 
+            We're building a platform that helps communities focus less on logistics and more on what matters: 
             prayer, healing, and community support.
           </p>
           <Button href="/demo" variant="primary" size="lg">

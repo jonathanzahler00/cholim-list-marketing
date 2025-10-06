@@ -11,7 +11,7 @@ export function CTA() {
           Ready to modernize your Mi Sheberach list?
         </h2>
         <p className="text-xl text-primary-100 mb-10 leading-relaxed">
-          Join 50+ communities already using Cholim List. Start your 14-day free trial today, 
+          Start your 14-day free trial today and experience modern Mi Sheberach management, 
           or schedule a personalized demo to see how we can help your organization.
         </p>
         

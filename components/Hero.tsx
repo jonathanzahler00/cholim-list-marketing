@@ -44,16 +44,15 @@ export function Hero() {
           
           {/* Social Proof */}
           <div className="flex flex-col items-center space-y-4">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div 
-                  key={i} 
-                  className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-400 to-secondary-400 border-2 border-white"
-                ></div>
-              ))}
+            <div className="flex items-center space-x-2">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 to-secondary-400 flex items-center justify-center border-2 border-white shadow-lg">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
             </div>
-            <p className="text-gray-600 text-sm">
-              Trusted by <span className="font-semibold text-primary-700">50+ communities</span> worldwide
+            <p className="text-gray-600 text-sm font-medium">
+              Built for Jewish communities worldwide
             </p>
           </div>
         </div>
