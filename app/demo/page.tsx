@@ -18,12 +18,27 @@ export default function DemoPage() {
     e.preventDefault();
     setStatus('submitting');
     
-    // TODO: Integrate with your email service (Resend, SendGrid, Formspree, etc.)
-    // For now, we'll simulate a submission
-    setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', organization: '', phone: '', message: '' });
-    }, 1000);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', organization: '', phone: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setStatus('error');
+    }
   };
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -138,6 +153,15 @@ export default function DemoPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {/* Web3Forms Access Key */}
+                    <input type="hidden" name="access_key" value="0fc034ee-a675-4bc3-b8d5-600783989767" />
+                    
+                    {/* Optional: Redirect URL after submission */}
+                    <input type="hidden" name="redirect" value="false" />
+                    
+                    {/* Subject line for email */}
+                    <input type="hidden" name="subject" value="New Demo Request from Cholim List" />
+                    
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                         Name *
@@ -150,7 +174,7 @@ export default function DemoPage() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="Rabbi David Cohen"
+                        placeholder="John Smith"
                       />
                     </div>
                     
@@ -166,7 +190,7 @@ export default function DemoPage() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="rabbi@yourshul.org"
+                        placeholder="john@example.com"
                       />
                     </div>
                     
@@ -215,6 +239,12 @@ export default function DemoPage() {
                         placeholder="Tell us about your needs or any questions you have..."
                       />
                     </div>
+                    
+                    {status === 'error' && (
+                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
+                        There was an error submitting the form. Please try again or email us directly.
+                      </div>
+                    )}
                     
                     <Button 
                       type="submit" 
