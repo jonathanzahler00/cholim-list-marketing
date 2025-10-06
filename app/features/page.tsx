@@ -173,10 +173,10 @@ export default function FeaturesPage() {
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Everything you need to manage
+            Everything you need for your
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-              Mi Sheberach lists
+              Mi Sheberach list to manage itself
             </span>
           </h1>
           <p className="text-xl text-gray-600 mb-8">

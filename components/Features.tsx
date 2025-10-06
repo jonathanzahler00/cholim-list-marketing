@@ -89,7 +89,7 @@ export function Features() {
             Features
           </h2>
           <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Everything you need to manage cholim names
+            Everything you need for your Mi Sheberach list to manage itself
           </p>
           <p className="max-w-2xl mx-auto text-xl text-gray-600">
             Built specifically for Jewish communities, with the features that matter most.
