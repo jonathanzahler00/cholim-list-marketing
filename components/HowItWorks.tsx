@@ -11,7 +11,7 @@ const steps = [
   },
   {
     number: '03',
-    title: 'The gabbai receives a clean, printable list — no chasing.',
+    title: 'The gabbai receives a clean, printable list - no chasing.',
     description: 'One click to export, print, or share. The list is ready when you are.',
   },
 ];
@@ -23,7 +23,7 @@ export function HowItWorks() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Your cholim list — organized, updated, and ready every week.
+            Your cholim list - organized, updated, and ready every week.
           </h2>
           <p className="max-w-2xl mx-auto text-xl text-gray-600">
             Three simple steps.

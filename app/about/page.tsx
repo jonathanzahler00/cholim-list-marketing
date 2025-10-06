@@ -3,7 +3,7 @@ import { Button } from '@/components/Button';
 
 export const metadata: Metadata = {
   title: "About - Cholim List",
-  description: "Built by gabbaim, for gabbaim. We know the stress of managing cholim names — we built this system to fix that.",
+  description: "Built by gabbaim, for gabbaim. We know the stress of managing cholim names - we built this system to fix that.",
 };
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
             Built by gabbaim, for gabbaim.
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We know the stress of managing cholim names — the WhatsApps, the calls, the late-night updates. We built this system to fix that, so every tefillah can focus on what matters most.
+            We know the stress of managing cholim names - the WhatsApps, the calls, the late-night updates. We built this system to fix that, so every tefillah can focus on what matters most.
           </p>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             </p>
             
             <p className="text-xl leading-relaxed mb-6">
-              The system automates the chaos. Members submit names securely. The system organizes everything automatically. Gabbaim get a clean, printable list — no chasing required.
+              The system automates the chaos. Members submit names securely. The system organizes everything automatically. Gabbaim get a clean, printable list - no chasing required.
             </p>
             
             <p className="text-xl leading-relaxed">

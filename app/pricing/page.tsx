@@ -198,7 +198,7 @@ export default function PricingPage() {
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                               ) : (
-                                <span className="text-gray-400">—</span>
+                                <span className="text-gray-400">-</span>
                               )
                             ) : (
                               <span className="text-gray-700 font-medium">{feature.pro}</span>
@@ -211,7 +211,7 @@ export default function PricingPage() {
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                 </svg>
                               ) : (
-                                <span className="text-gray-400">—</span>
+                                <span className="text-gray-400">-</span>
                               )
                             ) : (
                               <span className="text-gray-700">{feature.enterprise}</span>

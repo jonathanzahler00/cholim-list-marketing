@@ -14,7 +14,7 @@ export default function HowItWorksPage() {
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Run your cholim list — without running after anyone.
+            Run your cholim list - without running after anyone.
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             We automate the updates, the organization, and the weekly list creation. You stay in control without lifting a finger.
@@ -82,10 +82,10 @@ export default function HowItWorksPage() {
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
             <p className="text-xl text-gray-700 italic mb-6">
-              "For the first time, our cholim list actually stays current — without chasing anyone."
+              "For the first time, our cholim list actually stays current - without chasing anyone."
             </p>
             <p className="text-gray-600 font-medium">
-              — Coming soon from early adopters
+              - Coming soon from early adopters
             </p>
           </div>
         </div>

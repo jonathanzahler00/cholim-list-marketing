@@ -15,7 +15,7 @@ export function Hero() {
           
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Finally — an Organized Cholim List
+            Finally - an Organized Cholim List
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
               for Your Shul.
@@ -24,7 +24,7 @@ export function Hero() {
           
           {/* Subheadline */}
           <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-gray-600 mb-10 leading-relaxed">
-            Stop juggling WhatsApps, paper notes, and Google Sheets. Cholim List runs itself — for you, not by you.
+            Stop juggling WhatsApps, paper notes, and Google Sheets. Cholim List runs itself - for you, not by you.
           </p>
           
           {/* CTA Buttons */}

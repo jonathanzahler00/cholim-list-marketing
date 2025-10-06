@@ -12,7 +12,7 @@ export function Footer() {
               <span className="text-xl font-bold text-white">Cholim List</span>
             </div>
             <p className="text-gray-400 text-sm">
-              The Cholim List that's run for you — not by you.
+              The Cholim List that's run for you - not by you.
             </p>
           </div>
           

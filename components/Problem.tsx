@@ -59,7 +59,7 @@ export function Problem() {
         {/* Solution Statement */}
         <div className="text-center pt-8 border-t-2 border-gray-200">
           <p className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-            We built Cholim List to fix that — once and for all.
+            We built Cholim List to fix that - once and for all.
           </p>
         </div>
       </div>
