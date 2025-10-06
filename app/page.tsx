@@ -1,4 +1,5 @@
 import { Hero } from '@/components/Hero';
+import { Problem } from '@/components/Problem';
 import { Features } from '@/components/Features';
 import { HowItWorks } from '@/components/HowItWorks';
 import { SocialProof } from '@/components/SocialProof';
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Problem />
       <Features />
       <HowItWorks />
       <SocialProof />
