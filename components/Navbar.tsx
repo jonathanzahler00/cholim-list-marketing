@@ -22,8 +22,11 @@ export function Navbar() {
             <Link href="/how-it-works" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               How It Works
             </Link>
-            <Button href="/demo" variant="primary" size="sm">
+            <Link href="/demo" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               Get Started
+            </Link>
+            <Button href="/demo" variant="primary" size="sm">
+              Get Your Shul Organized
             </Button>
           </div>
           
@@ -54,8 +57,15 @@ export function Navbar() {
             >
               How It Works
             </Link>
-            <Button href="/demo" variant="primary" size="md" className="w-full">
+            <Link 
+              href="/demo" 
+              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
               Get Started
+            </Link>
+            <Button href="/demo" variant="primary" size="md" className="w-full">
+              Get Your Shul Organized
             </Button>
           </div>
         </div>

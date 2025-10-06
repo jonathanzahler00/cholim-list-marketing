@@ -10,7 +10,7 @@ export default function DemoPage() {
     shulName: '',
     email: '',
     city: '',
-    startDate: '',
+    phone: '',
   });
   
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -32,7 +32,7 @@ export default function DemoPage() {
       
       if (data.success) {
         setStatus('success');
-        setFormData({ name: '', shulName: '', email: '', city: '', startDate: '' });
+        setFormData({ name: '', shulName: '', email: '', city: '', phone: '' });
       } else {
         setStatus('error');
       }
@@ -55,10 +55,10 @@ export default function DemoPage() {
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Ready to Get Your Shul Organized?
+            Let's get your shul organized.
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Let's fix the chaos. Fill out the form below.
+            We'll set up your secure list and share your submission link.
           </p>
         </div>
       </section>
@@ -76,10 +76,12 @@ export default function DemoPage() {
                     </svg>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    We'll be in touch soon!
+                    Thanks! We'll set up your shul and email your link within one business day.
                   </h3>
                   <p className="text-gray-600 mb-8">
-                    Thank you for your interest. We'll reach out shortly to get your shul organized.
+                    <a href="/how-it-works" className="text-primary-600 hover:text-primary-700 underline">
+                      Learn more about how it works
+                    </a>
                   </p>
                   <Button 
                     variant="outline"
@@ -98,7 +100,7 @@ export default function DemoPage() {
                   
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Name *
+                      Gabbai Name *
                     </label>
                     <input
                       type="text"
@@ -161,24 +163,31 @@ export default function DemoPage() {
                   </div>
                   
                   <div>
-                    <label htmlFor="startDate" className="block text-sm font-medium text-gray-700 mb-2">
-                      When would you like to start? *
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Phone (Optional)
                     </label>
-                    <select
-                      id="startDate"
-                      name="startDate"
-                      required
-                      value={formData.startDate}
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                    >
-                      <option value="">Select a timeframe</option>
-                      <option value="immediately">Immediately</option>
-                      <option value="this-week">This week</option>
-                      <option value="next-week">Next week</option>
-                      <option value="this-month">This month</option>
-                      <option value="just-exploring">Just exploring</option>
-                    </select>
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+                  
+                  <div className="flex items-start space-x-3">
+                    <input
+                      type="checkbox"
+                      id="confirm"
+                      name="confirm"
+                      required
+                      className="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
+                    />
+                    <label htmlFor="confirm" className="text-sm text-gray-700">
+                      I confirm I'm setting this up for a shul/community.
+                    </label>
                   </div>
                   
                   {status === 'error' && (
@@ -196,6 +205,10 @@ export default function DemoPage() {
                   >
                     {status === 'submitting' ? 'Submitting...' : 'Get My Shul Organized'}
                   </Button>
+                  
+                  <p className="text-sm text-gray-600 text-center mt-4">
+                    Setup takes ~5 minutes. We'll guide you.
+                  </p>
                 </form>
               )}
             </div>

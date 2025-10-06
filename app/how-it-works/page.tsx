@@ -17,8 +17,14 @@ export default function HowItWorksPage() {
             Run your cholim list - without running after anyone.
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            We automate the updates, the organization, and the weekly list creation. You stay in control without lifting a finger.
+            Automation for updates, reminders, and weekly lists. Finally, organized by default.
           </p>
+          <Button href="/demo" variant="primary" size="lg">
+            Get Your Shul Organized
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Button>
         </div>
       </section>
 
@@ -91,11 +97,62 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
+      {/* What You Get Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
+            Everything a gabbai needs to stay organized
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="flex items-start space-x-3">
+              <svg className="w-6 h-6 text-secondary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="text-lg font-medium text-gray-900">Smart updates</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3">
+              <svg className="w-6 h-6 text-secondary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="text-lg font-medium text-gray-900">Weekly refresh</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3">
+              <svg className="w-6 h-6 text-secondary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="text-lg font-medium text-gray-900">Confidential access</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3">
+              <svg className="w-6 h-6 text-secondary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="text-lg font-medium text-gray-900">Printable/PDF</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-3">
+              <svg className="w-6 h-6 text-secondary-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <div>
+                <p className="text-lg font-medium text-gray-900">Custom shul header</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            See how it works in your shul.
+            See it with your shul's details.
           </h2>
           <Button href="/demo" variant="primary" size="lg">
             Get Your Shul Organized
