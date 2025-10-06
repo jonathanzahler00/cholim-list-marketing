@@ -18,7 +18,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Names come in from WhatsApp, phone, email
+              Names come in from WhatsApp, phone, email.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              No one knows who's been davened for
+              No one knows who should or should not be davened for.
             </p>
           </div>
 
@@ -40,7 +40,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Old names linger, new ones get missed
+              Old names linger, new ones get missed.
             </p>
           </div>
 

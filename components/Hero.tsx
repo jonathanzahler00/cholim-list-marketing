@@ -1,5 +1,4 @@
 import { Button } from './Button';
-import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -36,41 +35,11 @@ export function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Button>
-            <Button href="/features" variant="outline" size="lg">
-              See How It Works
+            <Button href="/pricing" variant="outline" size="lg">
+              See Pricing
             </Button>
           </div>
           
-          {/* Social Proof */}
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-400 to-secondary-400 flex items-center justify-center border-2 border-white shadow-lg">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-            </div>
-            <p className="text-gray-600 text-sm font-medium">
-              Built for Jewish communities worldwide
-            </p>
-          </div>
-        </div>
-        
-        {/* Demo Screenshot Placeholder */}
-        <div className="mt-20 max-w-6xl mx-auto">
-          <div className="relative rounded-xl shadow-2xl overflow-hidden border border-gray-200 bg-white">
-            <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-24 h-24 mx-auto mb-4 bg-primary-100 rounded-2xl flex items-center justify-center">
-                  <svg className="w-12 h-12 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <p className="text-gray-600 font-medium">Live Demo Screenshot</p>
-                <p className="text-gray-400 text-sm mt-2">Clean, modern interface designed for dignity</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -17,8 +17,8 @@ const faqs: FAQItem[] = [
     answer: 'Yes! You can customize the form\'s text, add your organization\'s branding, set submission limits, and configure which fields are required. The Pro and Enterprise tiers offer even more customization options.',
   },
   {
-    question: 'What happens to names after the weekly rollover?',
-    answer: 'Non-long-term names are automatically archived every Sunday at midnight. They\'re not deleted - you can still access them in the archive section of your admin dashboard for historical records or reporting.',
+    question: 'What happens to names after the monthly rollover?',
+    answer: 'Non-long-term names are automatically archived every Rosh Chodesh (monthly). They\'re not deleted - you can still access them in the archive section of your admin dashboard for historical records or reporting.',
   },
   {
     question: 'Is the platform HIPAA compliant?',
