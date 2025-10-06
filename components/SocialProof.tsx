@@ -4,22 +4,23 @@ export function SocialProof() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Section Header */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Trusted by gabbaim who care about doing it right.
+          Trusted by Shuls Who Care About Doing It Right.
         </h2>
         
         {/* Copy */}
-        <p className="text-xl text-gray-700 mb-10 leading-relaxed">
-          We're rolling out with shuls across the U.S. and Israel who are tired of managing lists manually.
-          <br />
-          <strong>Be among the first to organize your community's cholim updates the modern way.</strong>
+        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+          We're rolling out across communities that want their cholim lists handled properly - with kavod, care, and order.
         </p>
         
-        {/* CTA */}
-        <div className="inline-flex items-center space-x-2 bg-white px-6 py-3 rounded-lg shadow-md">
-          <svg className="w-5 h-5 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-          </svg>
-          <span className="text-gray-700 font-medium">Join the early community</span>
+        <p className="text-xl text-gray-900 font-medium mb-10">
+          Be among the first to bring structured organization to your shul's cholim list.
+        </p>
+        
+        {/* Placeholder Stats */}
+        <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-4 inline-block shadow-sm">
+          <p className="text-sm text-gray-600">
+            Now rolling out to communities across the U.S. and Israel
+          </p>
         </div>
       </div>
     </section>
