@@ -1,0 +1,37 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="url(#gradient)" stroke="#2563eb" stroke-width="2"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Stylized scroll/document with list lines -->
+  <g transform="translate(35, 30)">
+    <!-- Document/scroll shape -->
+    <path d="M 5 0 L 45 0 C 48 0 50 2 50 5 L 50 55 C 50 58 48 60 45 60 L 5 60 C 2 60 0 58 0 55 L 0 5 C 0 2 2 0 5 0 Z" 
+          fill="white" opacity="0.95"/>
+    
+    <!-- List lines -->
+    <line x1="10" y1="15" x2="40" y2="15" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="10" y1="25" x2="40" y2="25" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="10" y1="35" x2="40" y2="35" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="10" y1="45" x2="30" y2="45" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Subtle Star of David accent in top right -->
+    <g transform="translate(38, 8) scale(0.15)" opacity="0.6">
+      <path d="M 0,-20 L 17.32,10 L -17.32,10 Z" fill="#2563eb"/>
+      <path d="M 0,20 L 17.32,-10 L -17.32,-10 Z" fill="#2563eb"/>
+    </g>
+  </g>
+  
+  <!-- Healing/care accent - small heart -->
+  <circle cx="85" cy="45" r="6" fill="#10b981"/>
+  <path d="M 85 42 L 83 40 C 81 38 78 38 76 40 C 74 42 74 45 76 47 L 85 56 L 94 47 C 96 45 96 42 94 40 C 92 38 89 38 87 40 L 85 42 Z" 
+        fill="white" opacity="0.9" transform="scale(0.35) translate(160, 60)"/>
+</svg>
+

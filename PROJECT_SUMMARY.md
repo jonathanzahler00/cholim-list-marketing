@@ -21,11 +21,11 @@ A modern, comprehensive marketing website for the Cholim List application has be
    - Use cases for different organizations
    - Beautiful icon-based layout
 
-3. **Pricing Page** (`/pricing`) - Three-tier pricing:
-   - Basic (Free) - Small communities
-   - Pro ($29/month) - Growing communities  
-   - Enterprise (Custom) - Large organizations
+3. **Pricing Page** (`/pricing`) - Two-tier pricing:
+   - Professional ($29/month) - Complete solution for most communities
+   - Enterprise (Custom) - Large organizations with multi-site needs
    - Full feature comparison table
+   - 14-day free trial for all plans
    - FAQ section
 
 4. **Demo Request Page** (`/demo`) - Contact form with:

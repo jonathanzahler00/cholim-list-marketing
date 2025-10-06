@@ -5,65 +5,51 @@ import { CTA } from '@/components/CTA';
 
 export const metadata: Metadata = {
   title: "Pricing - Cholim List",
-  description: "Choose the perfect plan for your community. From free for small shuls to enterprise solutions for large organizations.",
+  description: "Choose the perfect plan for your community. Start with a 14-day free trial. Professional and Enterprise solutions available.",
 };
 
 const pricingTiers = [
   {
-    name: "Basic",
-    price: "Free",
-    period: "forever",
-    description: "Perfect for small communities just getting started",
+    name: "Professional",
+    price: "$29",
+    period: "/month",
+    description: "Complete solution for most communities",
     features: [
-      "Up to 100 names per week",
-      "Public submission form",
+      "Unlimited names per week",
+      "Public submission form (up to 4 names per submission)",
       "Real-time duplicate detection",
       "Long-term name tracking",
       "Hebrew & English support",
-      "Basic export (CSV)",
-      "Automated weekly rollover",
+      "Automated weekly rollover (Sunday nights)",
+      "Optional monthly archive mode",
+      "Admin dashboard with search & filters",
+      "Export to CSV & print-friendly formats",
+      "Archive management with trash/restore",
+      "Email notifications (optional)",
+      "PrintNode integration (automated printing)",
+      "Multiple admin accounts",
       "Email support",
     ],
-    cta: "Start Free",
-    ctaLink: "https://app.cholimlist.com/signup",
-  },
-  {
-    name: "Pro",
-    price: "$29",
-    period: "/month",
-    description: "For growing communities with advanced needs",
-    features: [
-      "Unlimited names",
-      "Everything in Basic, plus:",
-      "Email notifications",
-      "Advanced export (CSV, JSON, PDF)",
-      "Multiple admin accounts",
-      "Role-based access control",
-      "Custom form branding",
-      "API access",
-      "Priority email support",
-      "Remove 'Powered by' branding",
-    ],
     highlighted: true,
-    cta: "Start 14-Day Trial",
-    ctaLink: "/demo",
+    cta: "Start 14-Day Free Trial",
+    ctaLink: "https://app.cholimlist.com/signup",
   },
   {
     name: "Enterprise",
     price: "Custom",
     period: "pricing",
-    description: "For large organizations with specific requirements",
+    description: "For large organizations and multi-site needs",
     features: [
-      "Everything in Pro, plus:",
-      "Multi-site support",
+      "Everything in Professional, plus:",
+      "Multi-site/multi-campus support",
       "White-label (custom domain)",
-      "PrintNode integration",
+      "Advanced API access with higher rate limits",
       "Webhook integrations",
-      "Audit logs",
-      "Custom features",
+      "Audit logs & compliance tracking",
+      "Custom feature development",
       "Dedicated account manager",
-      "Phone support",
-      "SLA guarantees",
+      "Priority phone & email support",
+      "SLA guarantees (99.9% uptime)",
       "Custom contract terms",
     ],
     cta: "Contact Sales",
@@ -75,59 +61,59 @@ const comparisonFeatures = [
   {
     category: "Core Features",
     features: [
-      { name: "Names per week", basic: "100", pro: "Unlimited", enterprise: "Unlimited" },
-      { name: "Public submission form", basic: true, pro: true, enterprise: true },
-      { name: "Duplicate detection", basic: true, pro: true, enterprise: true },
-      { name: "Long-term names", basic: true, pro: true, enterprise: true },
-      { name: "Hebrew support", basic: true, pro: true, enterprise: true },
-      { name: "Weekly rollover", basic: true, pro: true, enterprise: true },
+      { name: "Names per week", pro: "Unlimited", enterprise: "Unlimited" },
+      { name: "Public submission form (up to 4 names)", pro: true, enterprise: true },
+      { name: "Real-time duplicate detection", pro: true, enterprise: true },
+      { name: "Long-term name tracking", pro: true, enterprise: true },
+      { name: "Hebrew & English support", pro: true, enterprise: true },
+      { name: "Automated weekly rollover", pro: true, enterprise: true },
+      { name: "Optional monthly archive mode", pro: true, enterprise: true },
     ],
   },
   {
     category: "Admin & Management",
     features: [
-      { name: "Admin accounts", basic: "1", pro: "Unlimited", enterprise: "Unlimited" },
-      { name: "Role-based access", basic: false, pro: true, enterprise: true },
-      { name: "Archive management", basic: true, pro: true, enterprise: true },
-      { name: "Audit logs", basic: false, pro: false, enterprise: true },
+      { name: "Admin accounts", pro: "Unlimited", enterprise: "Unlimited" },
+      { name: "Search & filter functionality", pro: true, enterprise: true },
+      { name: "Archive management", pro: true, enterprise: true },
+      { name: "Trash & restore", pro: true, enterprise: true },
+      { name: "Audit logs & compliance", pro: false, enterprise: true },
     ],
   },
   {
-    category: "Export & Integration",
+    category: "Export & Printing",
     features: [
-      { name: "CSV export", basic: true, pro: true, enterprise: true },
-      { name: "JSON export", basic: false, pro: true, enterprise: true },
-      { name: "PDF export", basic: false, pro: true, enterprise: true },
-      { name: "API access", basic: false, pro: true, enterprise: true },
-      { name: "Webhooks", basic: false, pro: false, enterprise: true },
-      { name: "PrintNode integration", basic: false, pro: false, enterprise: true },
+      { name: "CSV export", pro: true, enterprise: true },
+      { name: "JSON export", pro: true, enterprise: true },
+      { name: "Print-friendly layouts", pro: true, enterprise: true },
+      { name: "PrintNode automated printing", pro: true, enterprise: true },
     ],
   },
   {
     category: "Automation & Notifications",
     features: [
-      { name: "Email notifications", basic: false, pro: true, enterprise: true },
-      { name: "Weekly summaries", basic: false, pro: true, enterprise: true },
-      { name: "Custom automations", basic: false, pro: false, enterprise: true },
+      { name: "Email notifications (optional)", pro: true, enterprise: true },
+      { name: "Weekly summary emails", pro: true, enterprise: true },
+      { name: "Custom automations", pro: false, enterprise: true },
+      { name: "Webhook integrations", pro: false, enterprise: true },
     ],
   },
   {
     category: "Customization",
     features: [
-      { name: "Custom form branding", basic: false, pro: true, enterprise: true },
-      { name: "Remove branding", basic: false, pro: true, enterprise: true },
-      { name: "Custom domain", basic: false, pro: false, enterprise: true },
-      { name: "White-label", basic: false, pro: false, enterprise: true },
-      { name: "Multi-site support", basic: false, pro: false, enterprise: true },
+      { name: "Custom form text", pro: true, enterprise: true },
+      { name: "Custom domain support", pro: false, enterprise: true },
+      { name: "White-label branding", pro: false, enterprise: true },
+      { name: "Multi-site/multi-campus", pro: false, enterprise: true },
     ],
   },
   {
-    category: "Support",
+    category: "Support & SLA",
     features: [
-      { name: "Email support", basic: "Standard", pro: "Priority", enterprise: "Priority" },
-      { name: "Phone support", basic: false, pro: false, enterprise: true },
-      { name: "Account manager", basic: false, pro: false, enterprise: true },
-      { name: "SLA guarantee", basic: false, pro: false, enterprise: "99.9%" },
+      { name: "Email support", pro: "Standard", enterprise: "Priority" },
+      { name: "Phone support", pro: false, enterprise: true },
+      { name: "Dedicated account manager", pro: false, enterprise: true },
+      { name: "SLA guarantee", pro: false, enterprise: "99.9% uptime" },
     ],
   },
 ];
@@ -149,8 +135,8 @@ export default function PricingPage() {
 
       {/* Pricing Cards */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {pricingTiers.map((tier, index) => (
               <PricingCard key={index} tier={tier} />
             ))}
@@ -158,7 +144,7 @@ export default function PricingPage() {
           
           <div className="mt-12 text-center">
             <p className="text-gray-600">
-              All plans include 14-day free trial • No credit card required for Basic
+              Start with a 14-day free trial • No credit card required • Cancel anytime
             </p>
           </div>
         </div>
@@ -184,11 +170,8 @@ export default function PricingPage() {
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">
                       Features
                     </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
-                      Basic
-                    </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-primary-600 bg-primary-50">
-                      Pro
+                      Professional
                     </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">
                       Enterprise
@@ -199,7 +182,7 @@ export default function PricingPage() {
                   {comparisonFeatures.map((category, categoryIndex) => (
                     <>
                       <tr key={`category-${categoryIndex}`} className="bg-gray-100">
-                        <td colSpan={4} className="px-6 py-3 text-sm font-bold text-gray-900">
+                        <td colSpan={3} className="px-6 py-3 text-sm font-bold text-gray-900">
                           {category.category}
                         </td>
                       </tr>
@@ -210,19 +193,6 @@ export default function PricingPage() {
                         >
                           <td className="px-6 py-4 text-sm text-gray-700">
                             {feature.name}
-                          </td>
-                          <td className="px-6 py-4 text-sm text-center">
-                            {typeof feature.basic === 'boolean' ? (
-                              feature.basic ? (
-                                <svg className="w-5 h-5 text-secondary-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                </svg>
-                              ) : (
-                                <span className="text-gray-400">—</span>
-                              )
-                            ) : (
-                              <span className="text-gray-700">{feature.basic}</span>
-                            )}
                           </td>
                           <td className="px-6 py-4 text-sm text-center bg-primary-50">
                             {typeof feature.pro === 'boolean' ? (
