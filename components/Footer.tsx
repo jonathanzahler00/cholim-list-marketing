@@ -12,17 +12,20 @@ export function Footer() {
               <span className="text-xl font-bold text-white">Cholim List</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Get your shul organized.
+              The Cholim List that's run for you — not by you.
             </p>
           </div>
           
           {/* Simple Links */}
           <div className="flex gap-8 text-sm">
-            <Link href="/pricing" className="hover:text-white transition-colors">
-              Pricing
+            <Link href="/how-it-works" className="hover:text-white transition-colors">
+              How It Works
             </Link>
             <Link href="/demo" className="hover:text-white transition-colors">
-              Contact
+              Get Started
+            </Link>
+            <Link href="/about" className="hover:text-white transition-colors">
+              About
             </Link>
           </div>
         </div>

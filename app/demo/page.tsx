@@ -2,14 +2,15 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/Button';
+import { Metadata } from 'next';
 
 export default function DemoPage() {
   const [formData, setFormData] = useState({
     name: '',
+    shulName: '',
     email: '',
-    organization: '',
-    phone: '',
-    message: '',
+    city: '',
+    startDate: '',
   });
   
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -31,7 +32,7 @@ export default function DemoPage() {
       
       if (data.success) {
         setStatus('success');
-        setFormData({ name: '', email: '', organization: '', phone: '', message: '' });
+        setFormData({ name: '', shulName: '', email: '', city: '', startDate: '' });
       } else {
         setStatus('error');
       }
@@ -41,7 +42,7 @@ export default function DemoPage() {
     }
   };
   
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData(prev => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -54,242 +55,153 @@ export default function DemoPage() {
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Request a Demo
+            Ready to stop chasing names?
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            See Cholim List in action. Schedule a personalized demo or get in touch with our team.
+            Let's get your shul organized.
           </p>
         </div>
       </section>
 
-      {/* Content Section */}
+      {/* Form Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left Column - Info */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                What to expect
-              </h2>
-              
-              <div className="space-y-6 mb-12">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+            <div className="p-8 sm:p-12">
+              {status === 'success' ? (
+                <div className="text-center py-12">
+                  <div className="w-16 h-16 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Personalized Demo
-                    </h3>
-                    <p className="text-gray-600">
-                      We'll walk you through all features tailored to your organization's needs. Ask questions in real-time.
-                    </p>
-                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    We'll be in touch soon!
+                  </h3>
+                  <p className="text-gray-600 mb-8">
+                    Thank you for your interest. We'll reach out shortly to get your shul organized.
+                  </p>
+                  <Button 
+                    variant="outline"
+                    size="md"
+                    onClick={() => setStatus('idle')}
+                  >
+                    Submit Another Request
+                  </Button>
                 </div>
-                
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary-100 text-secondary-600 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Web3Forms Access Key */}
+                  <input type="hidden" name="access_key" value="0fc034ee-a675-4bc3-b8d5-600783989767" />
+                  <input type="hidden" name="redirect" value="false" />
+                  <input type="hidden" name="subject" value="New Shul Registration from Cholim List" />
+                  
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Setup Guidance
-                    </h3>
-                    <p className="text-gray-600">
-                      Learn how to migrate from your current system and get your team up and running quickly.
-                    </p>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                      placeholder="John Smith"
+                    />
                   </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent-100 text-accent-600 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
+                  
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                      Flexible Scheduling
-                    </h3>
-                    <p className="text-gray-600">
-                      Choose a time that works for you. Most demos take 20-30 minutes.
-                    </p>
+                    <label htmlFor="shulName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Shul Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="shulName"
+                      name="shulName"
+                      required
+                      value={formData.shulName}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                      placeholder="Your Shul or Organization"
+                    />
                   </div>
-                </div>
-              </div>
-              
-            </div>
-            
-            {/* Right Column - Form */}
-            <div>
-              <div className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Get started today
-                </h2>
-                
-                {status === 'success' ? (
-                  <div className="bg-secondary-50 border border-secondary-200 rounded-lg p-6 text-center">
-                    <div className="w-16 h-16 bg-secondary-500 text-white rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                      Thank you!
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      We've received your request. We'll be in touch within 24 hours to schedule your demo.
-                    </p>
-                    <Button 
-                      variant="primary" 
-                      onClick={() => setStatus('idle')}
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                      placeholder="john@example.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+                      City *
+                    </label>
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      required
+                      value={formData.city}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                      placeholder="New York"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="startDate" className="block text-sm font-medium text-gray-700 mb-2">
+                      When would you like to start? *
+                    </label>
+                    <select
+                      id="startDate"
+                      name="startDate"
+                      required
+                      value={formData.startDate}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
                     >
-                      Submit Another Request
-                    </Button>
+                      <option value="">Select a timeframe</option>
+                      <option value="immediately">Immediately</option>
+                      <option value="this-week">This week</option>
+                      <option value="next-week">Next week</option>
+                      <option value="this-month">This month</option>
+                      <option value="just-exploring">Just exploring</option>
+                    </select>
                   </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    {/* Web3Forms Access Key */}
-                    <input type="hidden" name="access_key" value="0fc034ee-a675-4bc3-b8d5-600783989767" />
-                    
-                    {/* Optional: Redirect URL after submission */}
-                    <input type="hidden" name="redirect" value="false" />
-                    
-                    {/* Subject line for email */}
-                    <input type="hidden" name="subject" value="New Demo Request from Cholim List" />
-                    
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                        Name *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="John Smith"
-                      />
+                  
+                  {status === 'error' && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
+                      There was an error submitting the form. Please try again or email us directly.
                     </div>
-                    
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                        Email *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="john@example.com"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">
-                        Organization *
-                      </label>
-                      <input
-                        type="text"
-                        id="organization"
-                        name="organization"
-                        required
-                        value={formData.organization}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="Beth Israel Congregation"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                        Phone (optional)
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
-                        placeholder="+1 (555) 123-4567"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                        Message (optional)
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
-                        placeholder="Tell us about your needs or any questions you have..."
-                      />
-                    </div>
-                    
-                    {status === 'error' && (
-                      <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
-                        There was an error submitting the form. Please try again or email us directly.
-                      </div>
-                    )}
-                    
-                    <Button 
-                      type="submit" 
-                      variant="primary" 
-                      size="lg" 
-                      className="w-full"
-                      disabled={status === 'submitting'}
-                    >
-                      {status === 'submitting' ? 'Submitting...' : 'Request Demo'}
-                    </Button>
-                    
-                    <p className="text-sm text-gray-500 text-center">
-                      By submitting, you agree to our Privacy Policy and Terms of Service
-                    </p>
-                  </form>
-                )}
-              </div>
+                  )}
+                  
+                  <Button 
+                    type="submit" 
+                    variant="primary" 
+                    size="lg" 
+                    className="w-full"
+                    disabled={status === 'submitting'}
+                  >
+                    {status === 'submitting' ? 'Submitting...' : 'Get My Shul Organized'}
+                  </Button>
+                </form>
+              )}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Try Demo Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Want to try it yourself first?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Explore our interactive demo to see the platform in action before scheduling a call.
-          </p>
-          <Button 
-            href="https://app.cholimlist.com/demo" 
-            variant="outline" 
-            size="lg"
-          >
-            View Live Demo
-            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-          </Button>
         </div>
       </section>
     </main>
   );
 }
-
-

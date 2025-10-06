@@ -2,16 +2,16 @@ const steps = [
   {
     number: '01',
     title: 'Members submit names securely.',
-    description: 'A simple form your community can access anytime. No more chasing people down.',
+    description: 'Use a form or link unique to each shul.',
   },
   {
     number: '02',
-    title: 'The system updates and organizes automatically.',
-    description: 'Duplicates are caught. Long-term names stay put. Everything is organized without you lifting a finger.',
+    title: 'The system organizes and updates automatically.',
+    description: 'Show version control or automatic sorting.',
   },
   {
     number: '03',
-    title: 'Gabbaim print or share the list weekly - no chasing.',
+    title: 'The gabbai receives a clean, printable list — no chasing.',
     description: 'One click to export, print, or share. The list is ready when you are.',
   },
 ];
@@ -22,11 +22,11 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-primary-600 tracking-wide uppercase mb-2">
-            How It Works
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            Your cholim list — organized, updated, and ready every week.
           </h2>
-          <p className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Three steps. No fluff, no theology, just function.
+          <p className="max-w-2xl mx-auto text-xl text-gray-600">
+            Three simple steps.
           </p>
         </div>
         
@@ -54,6 +54,19 @@ export function HowItWorks() {
               </div>
             ))}
           </div>
+        </div>
+        
+        {/* CTA */}
+        <div className="mt-16 text-center">
+          <a 
+            href="/how-it-works"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-colors"
+          >
+            See It in Action
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

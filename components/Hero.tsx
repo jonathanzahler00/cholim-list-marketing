@@ -15,25 +15,28 @@ export function Hero() {
           
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Stop juggling names, emails, and notes.
+            Finally — an Organized Cholim List
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-              This is the Cholim List that's run for you — not by you.
+              for Your Shul.
             </span>
           </h1>
           
           {/* Subheadline */}
           <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-gray-600 mb-10 leading-relaxed">
-            A simple, organized system that keeps your shul's list updated, shared, and managed automatically.
+            Stop juggling WhatsApps, paper notes, and Google Sheets. Cholim List runs itself — for you, not by you.
           </p>
           
-          {/* CTA Button */}
-          <div className="flex justify-center mb-16">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button href="/demo" variant="primary" size="lg">
               Get Your Shul Organized
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
+            </Button>
+            <Button href="/how-it-works" variant="outline" size="lg">
+              See How It Works
             </Button>
           </div>
           

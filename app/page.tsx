@@ -1,7 +1,7 @@
 import { Hero } from '@/components/Hero';
 import { Problem } from '@/components/Problem';
 import { HowItWorks } from '@/components/HowItWorks';
-import { FAQ } from '@/components/FAQ';
+import { SocialProof } from '@/components/SocialProof';
 import { CTA } from '@/components/CTA';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <HowItWorks />
-      <FAQ />
+      <SocialProof />
       <CTA />
     </main>
   );
