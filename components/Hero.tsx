@@ -16,29 +16,28 @@ export function Hero() {
           
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            From Paper Lists to
+            Tired of chasing updates and names?
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-              Digital Excellence
+              This is the Cholim List that's run for you - not by you.
             </span>
           </h1>
           
           {/* Subheadline */}
           <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-gray-600 mb-10 leading-relaxed">
-            Streamline your cholim names collection with a dedicated solution built for Jewish communities. 
-            Eliminate duplicates, save hours every week, and manage Mi Sheberach lists with dignity and ease.
+            A simple, organized system that keeps your shul's list updated, shared, and managed automatically.
           </p>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button href="/demo" variant="primary" size="lg">
-              Request Demo
+              Get Your Shul Organized
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Button>
-            <Button href="/pricing" variant="outline" size="lg">
-              See Pricing
+            <Button href="/features" variant="outline" size="lg">
+              See How It Works
             </Button>
           </div>
           
