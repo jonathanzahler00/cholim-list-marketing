@@ -19,20 +19,11 @@ export function Navbar() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/features" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              Features
-            </Link>
             <Link href="/pricing" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               Pricing
             </Link>
-            <Link href="/docs" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              Docs
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              About
-            </Link>
             <Button href="/demo" variant="primary" size="sm">
-              Request Demo
+              Get Your Shul Organized
             </Button>
           </div>
           
@@ -57,35 +48,14 @@ export function Navbar() {
         <div className="md:hidden border-t border-gray-200 bg-white">
           <div className="px-4 py-4 space-y-3">
             <Link 
-              href="/features" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Features
-            </Link>
-            <Link 
               href="/pricing" 
               className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </Link>
-            <Link 
-              href="/docs" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Docs
-            </Link>
-            <Link 
-              href="/about" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
-            </Link>
             <Button href="/demo" variant="primary" size="md" className="w-full">
-              Request Demo
+              Get Your Shul Organized
             </Button>
           </div>
         </div>
