@@ -31,12 +31,6 @@ export function Navbar() {
             <Link href="/about" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               About
             </Link>
-            <a 
-              href="https://app.cholimlist.com/login" 
-              className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
-            >
-              Sign In
-            </a>
             <Button href="/demo" variant="primary" size="sm">
               Request Demo
             </Button>
@@ -90,12 +84,6 @@ export function Navbar() {
             >
               About
             </Link>
-            <a 
-              href="https://app.cholimlist.com/login" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-            >
-              Sign In
-            </a>
             <Button href="/demo" variant="primary" size="md" className="w-full">
               Request Demo
             </Button>
