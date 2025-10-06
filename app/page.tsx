@@ -1,7 +1,6 @@
 import { Hero } from '@/components/Hero';
 import { Problem } from '@/components/Problem';
-import { HowItWorks } from '@/components/HowItWorks';
-import { SocialProof } from '@/components/SocialProof';
+import { Solution } from '@/components/Solution';
 import { CTA } from '@/components/CTA';
 
 export default function Home() {
@@ -9,8 +8,7 @@ export default function Home() {
     <main>
       <Hero />
       <Problem />
-      <HowItWorks />
-      <SocialProof />
+      <Solution />
       <CTA />
     </main>
   );

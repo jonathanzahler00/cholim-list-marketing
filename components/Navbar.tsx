@@ -22,12 +22,6 @@ export function Navbar() {
             <Link href="/how-it-works" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
               How It Works
             </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              Pricing
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              About
-            </Link>
             <Button href="/demo" variant="primary" size="sm">
               Get Started
             </Button>
@@ -59,20 +53,6 @@ export function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
-            </Link>
-            <Link 
-              href="/pricing" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Pricing
-            </Link>
-            <Link 
-              href="/about" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About
             </Link>
             <Button href="/demo" variant="primary" size="md" className="w-full">
               Get Started

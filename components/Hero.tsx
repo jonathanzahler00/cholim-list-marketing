@@ -15,17 +15,28 @@ export function Hero() {
           
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-            Finally - an Organized Cholim List
+            Finally - a Cholim List
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-              for Your Shul.
+              That's Actually Organized.
             </span>
           </h1>
           
           {/* Subheadline */}
-          <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-gray-600 mb-10 leading-relaxed">
-            Stop juggling WhatsApps, paper notes, and Google Sheets. Cholim List runs itself - for you, not by you.
+          <p className="max-w-3xl mx-auto text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
+            Built for gabbaim who are tired of chasing updates. This list runs itself - for you, not by you.
           </p>
+          
+          {/* Category Declaration */}
+          <div className="max-w-2xl mx-auto mb-10">
+            <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-4 shadow-sm">
+              <p className="text-base sm:text-lg text-gray-700 font-medium leading-relaxed">
+                The first automated cholim list platform for shuls.
+                <br />
+                <span className="text-gray-600">Because every community deserves an organized system - not a spreadsheet.</span>
+              </p>
+            </div>
+          </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

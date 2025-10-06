@@ -55,10 +55,10 @@ export default function DemoPage() {
       <section className="bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Ready to stop chasing names?
+            Ready to Get Your Shul Organized?
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Let's get your shul organized.
+            Let's fix the chaos. Fill out the form below.
           </p>
         </div>
       </section>

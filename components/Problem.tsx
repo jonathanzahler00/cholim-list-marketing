@@ -4,9 +4,12 @@ export function Problem() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Every gabbai knows the struggle.
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            The Gabbai's Reality
           </h2>
+          <p className="text-xl text-gray-600">
+            Every shul has a cholim list. Every gabbai knows how messy it gets.
+          </p>
         </div>
         
         {/* Pain Points */}
@@ -18,7 +21,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Names come in from all directions.
+              Names from WhatsApp, texts, and emails.
             </p>
           </div>
 
@@ -29,7 +32,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              No one knows who's been updated or removed.
+              Old names that stay on forever.
             </p>
           </div>
 
@@ -40,7 +43,7 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Old names linger, new ones get lost.
+              New names forgotten.
             </p>
           </div>
 
@@ -51,15 +54,18 @@ export function Problem() {
               </svg>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Every week, it's the same scramble.
+              Everyone blaming the gabbai.
             </p>
           </div>
         </div>
 
-        {/* Solution Statement */}
-        <div className="text-center pt-8 border-t-2 border-gray-200">
+        {/* Hard Truth */}
+        <div className="text-center pt-8 border-t-2 border-gray-200 mb-8">
+          <p className="text-xl text-gray-700 italic mb-6">
+            It's not avodah - it's administrative chaos.
+          </p>
           <p className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
-            We built Cholim List to fix that - once and for all.
+            We built the fix.
           </p>
         </div>
       </div>
