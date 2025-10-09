@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Cholim List - Modern Mi Sheberach Management for Jewish Communities",
-  description: "Streamline your cholim names collection with dedicated software built for synagogues and Jewish organizations. Eliminate duplicates, save hours every week, and manage Mi Sheberach lists with dignity.",
-  keywords: ["mi sheberach", "cholim list", "jewish software", "synagogue management", "prayer list", "hebrew names"],
+  title: "Cholim List — The organized cholim list system for shuls",
+  description: "Keep your shul's cholim list organized, updated, and printable every week — without chasing messages.",
+  keywords: ["cholim list", "organized", "shul", "mi sheberach", "jewish", "prayer list", "automated"],
   authors: [{ name: "Cholim List" }],
   icons: {
     icon: [
@@ -29,8 +24,8 @@ export const metadata: Metadata = {
     apple: '/icon-192.png',
   },
   openGraph: {
-    title: "Cholim List - Modern Mi Sheberach Management",
-    description: "From paper lists to digital excellence. Modern Mi Sheberach management for Jewish communities.",
+    title: "Cholim List — The organized cholim list system for shuls",
+    description: "Keep your shul's cholim list organized, updated, and printable every week — without chasing messages.",
     type: "website",
     url: "https://cholimlist.com",
     siteName: "Cholim List",
@@ -38,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cholim List - Modern Mi Sheberach Management",
-    description: "Streamline your cholim names collection with dedicated software built for Jewish communities.",
+    title: "Cholim List — The organized cholim list system for shuls",
+    description: "Keep your shul's cholim list organized, updated, and printable every week — without chasing messages.",
     images: ['/logo.svg'],
   },
 };
@@ -52,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         <Navbar />
         {children}

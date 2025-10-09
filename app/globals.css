@@ -2,28 +2,28 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1e293b;
+  --foreground: #1F2937;
   
-  /* Brand Colors - Warm, trustworthy tones */
-  --primary: #2563eb; /* Blue */
-  --primary-dark: #1e40af;
-  --primary-light: #3b82f6;
+  /* Brand Colors - Blueprint spec */
+  --primary: #0E2A47; /* Navy */
+  --primary-dark: #0A1F35;
+  --primary-light: #1A3A5C;
   
-  --secondary: #059669; /* Green */
-  --secondary-dark: #047857;
-  --secondary-light: #10b981;
+  --secondary: #1C7C7D; /* Teal */
+  --secondary-dark: #156B6C;
+  --secondary-light: #2A8B8C;
   
-  --accent: #8b5cf6; /* Purple accent */
-  --accent-light: #a78bfa;
+  --accent: #1C7C7D; /* Teal accent */
+  --accent-light: #2A8B8C;
   
-  /* Neutral palette */
-  --gray-50: #f8fafc;
-  --gray-100: #f1f5f9;
-  --gray-200: #e2e8f0;
-  --gray-300: #cbd5e1;
-  --gray-700: #334155;
-  --gray-800: #1e293b;
-  --gray-900: #0f172a;
+  /* Neutral palette - Blueprint spec */
+  --gray-50: #F7FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-700: #1F2937; /* Slate */
+  --gray-800: #1F2937;
+  --gray-900: #111827;
 }
 
 @theme inline {
@@ -31,28 +31,28 @@
   --color-foreground: var(--foreground);
   
   --color-primary-*: initial;
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
+  --color-primary-50: #f0f4f8;
+  --color-primary-100: #d9e2ec;
+  --color-primary-200: #bcccdc;
+  --color-primary-300: #9fb3c8;
+  --color-primary-400: #829ab1;
+  --color-primary-500: #627d98;
+  --color-primary-600: #486581;
+  --color-primary-700: #334e68;
+  --color-primary-800: #243b53;
+  --color-primary-900: #0E2A47;
   
   --color-secondary-*: initial;
-  --color-secondary-50: #ecfdf5;
-  --color-secondary-100: #d1fae5;
-  --color-secondary-200: #a7f3d0;
-  --color-secondary-300: #6ee7b7;
-  --color-secondary-400: #34d399;
-  --color-secondary-500: #10b981;
-  --color-secondary-600: #059669;
-  --color-secondary-700: #047857;
-  --color-secondary-800: #065f46;
-  --color-secondary-900: #064e3b;
+  --color-secondary-50: #f0fdfa;
+  --color-secondary-100: #ccfbf1;
+  --color-secondary-200: #99f6e4;
+  --color-secondary-300: #5eead4;
+  --color-secondary-400: #2dd4bf;
+  --color-secondary-500: #14b8a6;
+  --color-secondary-600: #0d9488;
+  --color-secondary-700: #0f766e;
+  --color-secondary-800: #115e59;
+  --color-secondary-900: #1C7C7D;
   
   --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-hebrew: "Noto Sans Hebrew", "Arial Hebrew", sans-serif;
