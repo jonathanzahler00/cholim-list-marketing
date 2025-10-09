@@ -1,0 +1,43 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F7FAFC"/>
+  
+  <!-- Header -->
+  <rect width="1200" height="120" fill="#0E2A47"/>
+  
+  <!-- Logo Area -->
+  <circle cx="100" cy="60" r="30" fill="#1C7C7D"/>
+  <text x="100" y="68" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">CL</text>
+  
+  <!-- Title -->
+  <text x="200" y="50" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="bold">Cholim List</text>
+  <text x="200" y="80" fill="#2A8B8C" font-family="Arial, sans-serif" font-size="18">The organized cholim list system for shuls</text>
+  
+  <!-- Main Content -->
+  <text x="100" y="200" fill="#1F2937" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Finally - a Cholim List</text>
+  <text x="100" y="250" fill="#1C7C7D" font-family="Arial, sans-serif" font-size="48" font-weight="bold">That's Actually Organized</text>
+  
+  <!-- Subtitle -->
+  <text x="100" y="320" fill="#6B7280" font-family="Arial, sans-serif" font-size="24">Stop juggling WhatsApps, emails, and scraps of paper.</text>
+  <text x="100" y="360" fill="#1F2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">This is the Cholim List that's run for you - not by you.</text>
+  
+  <!-- Features -->
+  <rect x="100" y="420" width="300" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="120" y="450" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Members Submit</text>
+  <text x="120" y="475" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">Secure form, no more collecting messages</text>
+  
+  <rect x="450" y="420" width="300" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="470" y="450" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">System Organizes</text>
+  <text x="470" y="475" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">Automatic updates and reminders</text>
+  
+  <rect x="800" y="420" width="300" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <text x="820" y="450" fill="#1F2937" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Gabbai Prints</text>
+  <text x="820" y="475" fill="#6B7280" font-family="Arial, sans-serif" font-size="14">Clean list ready for davening</text>
+  
+  <!-- CTA -->
+  <rect x="100" y="540" width="200" height="50" rx="8" fill="#0E2A47"/>
+  <text x="200" y="570" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Get Your Shul Organized</text>
+  
+  <!-- URL -->
+  <text x="1000" y="580" text-anchor="end" fill="#6B7280" font-family="Arial, sans-serif" font-size="16">cholimlist.com</text>
+</svg>

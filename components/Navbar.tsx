@@ -19,11 +19,11 @@ export function Navbar() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/how-it-works" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
+            <Link href="/how-it-works" className="text-gray-700 hover:text-primary-600 font-bold transition-colors">
               How It Works
             </Link>
-            <Link href="/demo" className="text-gray-700 hover:text-primary-600 font-medium transition-colors">
-              Get Started
+            <Link href="/demo" className="text-gray-700 hover:text-primary-600 font-bold transition-colors">
+              Get Your Shul Organized
             </Link>
             <Button href="/demo" variant="primary" size="sm">
               Get Your Shul Organized
@@ -52,17 +52,17 @@ export function Navbar() {
           <div className="px-4 py-4 space-y-3">
             <Link 
               href="/how-it-works" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-primary-600 font-bold"
               onClick={() => setMobileMenuOpen(false)}
             >
               How It Works
             </Link>
             <Link 
               href="/demo" 
-              className="block py-2 text-gray-700 hover:text-primary-600 font-medium"
+              className="block py-2 text-gray-700 hover:text-primary-600 font-bold"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Get Started
+              Get Your Shul Organized
             </Link>
             <Button href="/demo" variant="primary" size="md" className="w-full">
               Get Your Shul Organized

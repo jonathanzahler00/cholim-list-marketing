@@ -203,12 +203,32 @@ export default function DemoPage() {
                     className="w-full"
                     disabled={status === 'submitting'}
                   >
-                    {status === 'submitting' ? 'Submitting...' : 'Get My Shul Organized'}
+                    {status === 'submitting' ? 'Submitting...' : 'Get Your Shul Organized'}
                   </Button>
                   
                   <p className="text-sm text-gray-600 text-center mt-4">
                     Setup takes ~5 minutes. We'll guide you.
                   </p>
+                  
+                  {/* Onboarding Promise */}
+                  <div className="mt-6 p-4 bg-primary-50 rounded-lg border border-primary-200">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0">
+                        <svg className="w-5 h-5 text-primary-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-bold text-primary-900 mb-1">What happens next:</h4>
+                        <ul className="text-xs text-primary-700 space-y-1">
+                          <li>• Confirmation email within 1 hour</li>
+                          <li>• Sample PDF list sent to your inbox</li>
+                          <li>• Quick-start link to set up your shul</li>
+                          <li>• Personal setup call within 24 hours</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </form>
               )}
             </div>

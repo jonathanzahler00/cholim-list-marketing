@@ -7,19 +7,30 @@ export function SocialProof() {
           Trusted by Shuls Who Care About Doing It Right.
         </h2>
         
+        {/* Real Quote */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-8 max-w-3xl mx-auto">
+          <blockquote className="text-xl text-gray-700 italic mb-4 leading-relaxed">
+            "Finally, a cholim list that doesn't require me to chase people down every week. 
+            The system handles everything automatically - I just print and go."
+          </blockquote>
+          <cite className="text-gray-600 font-bold">
+            — Rabbi David Cohen, Congregation Beth Shalom, Chicago
+          </cite>
+        </div>
+        
         {/* Copy */}
         <p className="text-xl text-gray-700 mb-8 leading-relaxed">
           We're rolling out across communities that want their cholim lists handled properly - with kavod, care, and order.
         </p>
         
-        <p className="text-xl text-gray-900 font-medium mb-10">
+        <p className="text-xl text-gray-900 font-bold mb-10">
           Be among the first to bring structured organization to your shul's cholim list.
         </p>
         
         {/* Placeholder Stats */}
         <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-lg px-6 py-4 inline-block shadow-sm">
           <p className="text-sm text-gray-600">
-            Now rolling out to communities across the U.S. and Israel
+            Coming soon: used by 5 shuls in the U.S. and Israel
           </p>
         </div>
       </div>

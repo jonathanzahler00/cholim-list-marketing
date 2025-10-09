@@ -14,7 +14,7 @@ export function Hero() {
           </div>
           
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 mb-4 leading-[0.9] tracking-tight">
             Finally - a Cholim List
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">
@@ -27,7 +27,7 @@ export function Hero() {
             <p className="text-xl sm:text-2xl text-gray-700 mb-4 leading-relaxed">
               Stop juggling WhatsApps, emails, and scraps of paper.
             </p>
-            <p className="text-xl sm:text-2xl text-gray-900 font-medium leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-900 font-bold leading-relaxed">
               This is the Cholim List that's run for you - not by you.
             </p>
           </div>
@@ -41,7 +41,7 @@ export function Hero() {
                   <svg className="w-16 h-16 text-red-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                   </svg>
-                  <p className="text-sm text-gray-700 font-medium mb-2">Before: Chaos</p>
+                  <p className="text-sm text-gray-700 font-bold mb-2">Before: Chaos</p>
                   <p className="text-xs text-gray-500">WhatsApp threads, scattered emails, lost names</p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ export function Hero() {
                   <svg className="w-16 h-16 text-secondary-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                   </svg>
-                  <p className="text-sm text-gray-700 font-medium mb-2">After: Organized</p>
+                  <p className="text-sm text-gray-700 font-bold mb-2">After: Organized</p>
                   <p className="text-xs text-gray-500">Clean list, automatic updates, ready to print</p>
                 </div>
               </div>

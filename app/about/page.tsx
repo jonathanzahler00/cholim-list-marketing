@@ -25,8 +25,11 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg mx-auto">
-            <p className="text-xl leading-relaxed text-gray-700 mb-6">
-              We've been there - scrambling before Shabbos, juggling scraps of paper and WhatsApp messages, making last-minute calls to confirm names. It felt less like avodah and more like administrative chaos.
+            <p className="text-xl leading-relaxed text-gray-700 mb-4">
+              We've been there - scrambling before Shabbos, juggling scraps of paper and WhatsApp messages.
+            </p>
+            <p className="text-xl leading-relaxed text-gray-700 mb-4">
+              Making last-minute calls to confirm names. It felt less like avodah and more like administrative chaos.
             </p>
             
             <p className="text-xl leading-relaxed text-gray-700 mb-8">

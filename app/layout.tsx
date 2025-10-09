@@ -29,13 +29,27 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://cholimlist.com",
     siteName: "Cholim List",
-    images: ['/logo.svg'],
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Cholim List - The organized cholim list system for shuls',
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cholim List — The organized cholim list system for shuls",
     description: "Keep your shul's cholim list organized, updated, and printable every week — without chasing messages.",
-    images: ['/logo.svg'],
+    images: [
+      {
+        url: '/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Cholim List - The organized cholim list system for shuls',
+      }
+    ],
   },
 };
 
